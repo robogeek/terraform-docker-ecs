@@ -5,9 +5,9 @@ version: '3.8'
 
 # x-aws-vpc: "arn:aws:ec2:us-west-2:098106984154:vpc/vpc-09c034a9fa6822106"
 
-x-aws-vpc: "vpc-0f77610c6d5255814"
+x-aws-vpc: "vpc-08c2c2b544e393439"
 x-aws-cluster: "arn:aws:ecs:us-west-2:098106984154:cluster/notes-ecs-cluster"
-x-aws-loadbalancer: "arn:aws:elasticloadbalancing:us-west-2:098106984154:loadbalancer/app/notes-load-balancer/41586c6e4e510c0a"
+x-aws-loadbalancer: "arn:aws:elasticloadbalancing:us-west-2:098106984154:loadbalancer/app/notes-load-balancer/6955d9b1d9ae0339"
 
 services:
     nginx:

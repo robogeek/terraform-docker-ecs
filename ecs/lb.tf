@@ -1,6 +1,6 @@
 # alb.tf
 
-resource "aws_lb" "notes" {
+resource "aws_lb" "example" {
   name            = "${data.terraform_remote_state.vpc.outputs.project_name}-load-balancer"
   internal           = false
   load_balancer_type = "application"
@@ -75,7 +75,7 @@ resource "aws_security_group" "lb" {
   ingress {
     protocol    = "tcp"
     from_port   = 0
-    to_port     = var.notes_port
+    to_port     = var.service_port
     cidr_blocks = ["0.0.0.0/0"]
   }
   egress {
